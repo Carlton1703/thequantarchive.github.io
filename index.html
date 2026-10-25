@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Quant Archive // Open-Source Trading Repositories</title>
+    <style>
+        :root {
+            --bg-color: #0b0e14;
+            --card-bg: #121824;
+            --border-color: #1f293d;
+            --accent-green: #00e676;
+            --accent-blue: #2979ff;
+            --text-main: #e6edf3;
+            --text-muted: #8b949e;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+        }
+
+        body {
+            background-color: var(--bg-color);
+            color: var(--text-main);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            padding: 20px;
+        }
+
+        .container {
+            width: 100%;
+            max-width: 480px;
+            background: var(--card-bg);
+            border: 1px solid var(--border-color);
+            border-radius: 12px;
+            padding: 32px 24px;
+            box-shadow: 0 8px 24px rgba(0, 0, 0, 0.4);
+        }
+
+        .header {
+            text-align: center;
+            margin-bottom: 24px;
+        }
+
+        .badge {
+            display: inline-block;
+            background: rgba(0, 230, 118, 0.1);
+            color: var(--accent-green);
+            font-size: 11px;
+            font-weight: 700;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+            padding: 4px 10px;
+            border-radius: 20px;
+            border: 1px solid rgba(0, 230, 118, 0.3);
+            margin-bottom: 12px;
+            font-family: monospace;
+        }
+
+        h1 {
+            font-size: 20px;
+            font-weight: 700;
+            letter-spacing: -0.5px;
+            margin-bottom: 8px;
+        }
+
+        .subtitle {
+            font-size: 13px;
+            color: var(--text-muted);
+            line-height: 1.5;
+        }
+
+        .specs-card {
+            background: rgba(0, 0, 0, 0.3);
+            border: 1px solid var(--border-color);
+            border-radius: 8px;
+            padding: 16px;
+            margin-bottom: 24px;
+            font-size: 13px;
+        }
+
+        .spec-item {
+            display: flex;
+            justify-content: space-between;
+            padding: 6px 0;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+        }
+
+        .spec-item:last-child {
+            border-bottom: none;
+        }
+
+        .spec-label {
+            color: var(--text-muted);
+        }
+
+        .spec-value {
+            font-weight: 600;
+            color: var(--text-main);
+            font-family: monospace;
+        }
+
+        .features-list {
+            list-style: none;
+            margin-bottom: 24px;
+            font-size: 13px;
+            color: var(--text-muted);
+        }
+
+        .features-list li {
+            margin-bottom: 8px;
+            display: flex;
+            align-items: center;
+        }
+
+        .features-list li::before {
+            content: "✓";
+            color: var(--accent-green);
+            font-weight: bold;
+            margin-right: 10px;
+        }
+
+        .cta-btn {
+            display: block;
+            width: 100%;
+            background: var(--accent-green);
+            color: #05140b;
+            text-align: center;
+            padding: 14px 20px;
+            border-radius: 8px;
+            font-size: 14px;
+            font-weight: 700;
+            text-decoration: none;
+            transition: transform 0.15s ease, opacity 0.15s ease;
+            box-shadow: 0 4px 14px rgba(0, 230, 118, 0.25);
+        }
+
+        .cta-btn:active {
+            transform: scale(0.98);
+        }
+
+        .footer {
+            margin-top: 20px;
+            text-align: center;
+            font-size: 11px;
+            color: var(--text-muted);
+            font-family: monospace;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <div class="header">
+            <span class="badge">>_ RELEASE v2.0</span>
+            <h1>The Quant Archive</h1>
+            <p class="subtitle">Open-source TradingView scripts & structure suites engineered to de-bloat retail charts.</p>
+        </div>
+
+        <div class="specs-card">
+            <div class="spec-item">
+                <span class="spec-label">Repository Asset</span>
+                <span class="spec-value">8-in-1 Paywall Bypass</span>
+            </div>
+            <div class="spec-item">
+                <span class="spec-label">TradingView Footprint</span>
+                <span class="spec-value">1 Custom Slot</span>
+            </div>
+            <div class="spec-item">
+                <span class="spec-label">Script Version</span>
+                <span class="spec-value">Pine Script v5</span>
+            </div>
+            <div class="spec-item">
+                <span class="spec-label">Pricing / License</span>
+                <span class="spec-value">MIT Open-Source ($0)</span>
+            </div>
+        </div>
+
+        <ul class="features-list">
+            <li>Dynamic Support & Resistance Shelves</li>
+            <li>Asia, London & NY Session Killzone Ranges</li>
+            <li>Multi-EMA Trend Clouds & Rolling VWAP</li>
+            <li>Zero Repainting & Full Mobile Compatibility</li>
+        </ul>
+
+        <!-- REPLACE THE HREF VALUE BELOW WITH YOUR LOOTLABS LINK -->
+        <a href="PASTE_YOUR_LOOTLABS_LINK_HERE" class="cta-btn" target="_blank" rel="noopener noreferrer">
+            🔓 Unlock Source Code & Setup Guide
+        </a>
+
+        <div class="footer">
+            THE QUANT ARCHIVE // MIT LICENSE
+        </div>
+    </div>
+
+</body>
+</html>
